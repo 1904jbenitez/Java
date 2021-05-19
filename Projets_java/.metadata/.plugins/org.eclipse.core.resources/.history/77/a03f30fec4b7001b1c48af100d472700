@@ -1,0 +1,9 @@
+
+public class Jeu_papier_pierre_ciseaux {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

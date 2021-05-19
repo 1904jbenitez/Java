@@ -1,0 +1,67 @@
+import java.util.*;
+
+public class Jeu_papier_pierre_ciseaux {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		Random aleas = new Random();
+		int Nbmachine, Nbutilisateur;
+		Nbmachine = aleas.nextInt(3);
+		int compteur1 = 0;
+		int compteur2 = 0;
+		String rep = "O";
+
+		do
+		{	do
+		{
+			System.out.println("Veuillez entrer le chiffre 0 - 1 ou 2");
+			Nbutilisateur = sc.nextInt();
+
+			if (Nbutilisateur > (Nbmachine + 2))
+			{
+				System.out.println("Vous avez gagné un point!");
+				compteur1++;
+			}
+			else if (Nbutilisateur < (Nbmachine - 2))
+			{
+				System.out.println("Vous avez gagné un point!");
+				compteur1++;
+			}
+			else if (Nbutilisateur > (Nbmachine + 1))
+			{
+				System.out.println("Vous avez perdue un point!");
+				compteur2++;
+			}
+			else if (Nbutilisateur < (Nbmachine - 1))
+			{
+				System.out.println("Vous avez perdue un point!");
+				compteur2++;
+
+			}
+			else Nbmachine = Nbutilisateur;
+			{
+				System.out.println("Score nul, recommencez");
+			}
+
+
+		} while (compteur1 < 10 && compteur2 < 10);
+
+		sc.nextLine();
+
+		System.out.println("Voulez vous rejouer O/N ?");
+
+		rep = sc.nextLine().toUpperCase();
+
+
+		} while (rep.charAt(0) == 'O' && rep.length()<=1);
+
+		System.out.println("Programme terminé... Au revoir.");
+
+		sc.close();
+	}
+
+}
+
+
