@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;Surface_secteur_circulaire.Srrfaces&apos; to &apos;Surfaces&apos;&#x0D;&#x0A;- Original project: &apos;SrfaceSecteurCirculaire&apos;&#x0D;&#x0A;- Original element: &apos;Surface_secteur_circulaire.Srrfaces&apos;&#x0D;&#x0A;- Renamed element: &apos;Surface_secteur_circulaire.Surfaces&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Srrfaces&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Surface_secteur_circulaire{Srrfaces.java[Srrfaces" matchStrategy="1" name="Surfaces" qualified="false" references="true" similarDeclarations="false" stamp="1620723889465" textual="false" version="1.0"/>
-</session>

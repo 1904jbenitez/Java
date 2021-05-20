@@ -1,2 +1,0 @@
-INDEX VERSION 1.131+C:\Users\Stagiaire\OneDrive\Docs\GitHub\Java\Projets_java\.metadata\.plugins\org.eclipse.jdt.core
-2868131431.index
