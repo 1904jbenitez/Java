@@ -19,12 +19,10 @@ public class fonction_nombre_premier {
 	{
 	if (diviseurs[i]!=0)
 	{ 
-		System.out.println("Le numero indiqué n'est pas un numéro premier\n Diviseurs : "+diviseurs[i]);
 		
-	}else 
-		{
-		System.out.println("Le numero indiqué est un numéro premier");
-		}
+		System.out.println("Diviseurs : "+diviseurs[i]);
+		
+	}
 		sc.close();
 	}
 
