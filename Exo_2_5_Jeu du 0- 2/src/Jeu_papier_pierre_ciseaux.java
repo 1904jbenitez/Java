@@ -18,7 +18,7 @@ public class Jeu_papier_pierre_ciseaux {
 		do
 		{
 
-			System.out.println("Veuillez entrer le chiffre 0 - 1 ou 2");
+			System.out.println("Veuillez choisir le chiffre 0 - 1 ou 2 pour jouer ; ou un nombre negatif pour quitter le jeu");
 			nbUser = sc.nextInt();
 			if (nbUser >= 3)
 				System.out.println("Erreur utilisateur");
@@ -47,8 +47,12 @@ public class Jeu_papier_pierre_ciseaux {
 			{
 				System.out.println("Score nul, recommencez");
 			}
+			else
+			{
+				System.out.println("Vous avez abandonné la partie. Au revoir.");
+			}
 
-		} while (compteur1 < 5 || compteur2 < 5);
+		} while (compteur1 < 10 && compteur2 < 10);
 
 		sc.nextLine();
 
