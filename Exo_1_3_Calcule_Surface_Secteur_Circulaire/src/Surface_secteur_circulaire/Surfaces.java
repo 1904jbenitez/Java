@@ -1,6 +1,6 @@
 package Surface_secteur_circulaire;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Surfaces {
 
@@ -12,18 +12,18 @@ public class Surfaces {
 		double angle;
 		String lecture;
 		
-		@SuppressWarnings("resource")
+		//@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Veuillez noter la valeur(en metres) du rayon et (en degrés) de l'angle du secteur circulaire concerné, separés par un espace?");
+		System.out.println("Veuillez saisir la longueur du rayon(en metres) et l'angle du secteur circulaire(en degrés), separés par un espace.");
+		lecture = sc.nextLine();
 		
-		lecture = sc.next();
-		int position=  lecture.indexOf(" ");
-		String souschaine= lecture.substring(0, position);
-		int fin =lecture.length(); 	
-		String souschaine2= lecture.substring(position,fin);
+		int position = lecture.indexOf(" ");
+		String souschaine1 = lecture.substring(0, position);
+		int fin = lecture.length(); 	
+		String souschaine2 = lecture.substring(position,fin);
 		
-		double val = Integer.parseInt(souschaine);
+		double val = Integer.parseInt(souschaine1);
 		double val2 = Integer.parseInt(souschaine2);
 		
 		R= val;
@@ -32,6 +32,8 @@ public class Surfaces {
 		aire = (Math.PI*Math.pow(R,2)*angle)/360;
 		
 		System.out.println("L'aire du secteur circulaire concerné est: " + aire + " m2 ");
+		
+		sc.close();
 
 	}
 

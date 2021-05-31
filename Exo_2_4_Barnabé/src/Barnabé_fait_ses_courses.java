@@ -13,7 +13,7 @@ public class Barnabé_fait_ses_courses {
 
 
 
-		System.out.println("Bonjour, veuillez indiquer, en chiffres seulement, combien d'argent avez Barnabé au depart");
+		System.out.println("Bonjour, veuillez indiquer (en chiffres seulement), combien d'argent avez Barnabé au dèbut");
 		montant = sc.nextDouble();
 
 		int magasin = 1;
@@ -23,19 +23,21 @@ public class Barnabé_fait_ses_courses {
 			reste = (montant * 1 / 2) - 1;
 
 
-			if (reste < montant+1)
+			if (reste >= montant+1)
 			{
 				magasin++;
+				
 			}
-			else if (reste >= montant+1)
+			else()
 			{
 				magasin++;
+				magasin++;System.out.println("Barnabé il a fait des achats dans" + magasin + "magasins");
 			}
 
-		} while
+		} 
 			{
-			System.out.println("Barnabé il a fait des achats dans" + magasin + "magasins");
-			}
+			
+			}while
 
 	}
 

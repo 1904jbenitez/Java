@@ -20,7 +20,6 @@ public class Alphabet {
 				Phrase = sc.nextLine();
 				int depart=Phrase.length()-1; 
 				finchaine = Phrase.substring(depart,Phrase.length());
-				System.out.println(finchaine);
 				
 			} while (!finchaine.equals("."));
 			
@@ -30,7 +29,7 @@ public class Alphabet {
 			 }
 			 else 
 			 { 
-				 Phrase = Phrase.replace(" ", String.Empty);
+				 Phrase = Phrase.replace(" ", String.valueOf(0));
 	                Phrase = Phrase.replace("è", "e");
 	                Phrase = Phrase.replace("é", "e");
 	                Phrase = Phrase.replace("ê", "e");
@@ -42,25 +41,25 @@ public class Alphabet {
 			 }
 			 
 			 System.out.println("Veuillez saisir une lettre à rechercher dans la phrase!!");
-			 lettre = sc.nextChar.toLowerCase();
+			 lettre = sc.nextLine().charAt(0);
 			 
 			 for (int i = 0; i < Phrase.length() - 1; i++) 
 			 {
-				 if (lettre.compareTo(Phrase[i]) == 0)
+				 if (lettre==Phrase.charAt(i))
 				 { 
 				 trouve = true;
 				 compteur++;
 				 }
 			 }
 			 
-			 if (trouve == false) { System.out.println("La lettre n'est pas présente dansla phrase! ");
+			 if (trouve == false) { System.out.println("La lettre n'est pas présente dans la phrase! ");
 			 
 			 } 
 			 else 
 			 { 
 				 System.out.println("la lettre est présente : "+ compteur+" fois dans la phrase!");
 			 }
-			 
+			 sc.close();
 			 }
 			 
 			 
@@ -68,6 +67,6 @@ public class Alphabet {
 	}
 
 
-}
+
 
 
