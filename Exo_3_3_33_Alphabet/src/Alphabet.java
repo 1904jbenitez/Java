@@ -17,7 +17,7 @@ public class Alphabet {
 			do
 			{
 				System.out.println("Veuillez saisir une  phrase  terminée par un point(.)...");
-				Phrase = sc.nextLine();
+				Phrase = sc.nextLine().toLowerCase();
 				int depart=Phrase.length()-1; 
 				finchaine = Phrase.substring(depart,Phrase.length());
 				
@@ -29,11 +29,16 @@ public class Alphabet {
 			 }
 			 else 
 			 { 
-				 Phrase = Phrase.replace(" ", String.valueOf(0));
+				 	Phrase = Phrase.replaceAll(" ", "");
+				 	
+				 	Phrase=Phrase.replaceAll("\\p{Punct}","");
+				 	
+				 	Phrase=Phrase.replaceAll("\'","");
 	                Phrase = Phrase.replace("è", "e");
 	                Phrase = Phrase.replace("é", "e");
 	                Phrase = Phrase.replace("ê", "e");
 	                Phrase = Phrase.replace("ë", "e");
+	                Phrase = Phrase.replace("ç", "a");
 	                Phrase = Phrase.replace("à", "a");
 	                Phrase = Phrase.replace("ù", "u");
 	                Phrase = Phrase.replace("î", "i");
